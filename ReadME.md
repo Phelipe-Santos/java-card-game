@@ -1,5 +1,5 @@
 # 🃏 Java Card Game
-> Projeto desenvolvido utilizando **Java 17** e **JavaFX**.
+> Projeto Fullstack desenvolvido utilizando **Java 17** e **JavaFX**.
 
 Jogo de cartas desenvolvido em **Java**, com interface gráfica e lógica de jogo orientada a objetos.  
 O projeto implementa regras completas de jogo, sistema de palpites, controle de rodadas e suporte a jogadores humanos e bots.
@@ -18,10 +18,15 @@ O jogo utiliza o sistema de **força das cartas do Truco** (jogo popular em São
     - Rodada 2: 2 cartas
     - E assim por diante
 - Após receberem as cartas, os jogadores fazem **palpites** de quantas vazadas (mãos) acreditam que irão ganhar.
+- Jogador que vence a vazada(mão) sempre será o primeiro a jogar a carta na próxima.
 - Se o jogador ganhar **exatamente** o número de vazadas que palpitou:
     - Recebe **10 pontos + número de vazadas vencidas**
+
 - Caso não cumpra o palpite:
     - Não recebe pontos
+- Os palpites de todos os jogadores somados não pode ser igual ao número de cartas.
+    - Para cumprir a regra acima o último jogador a palpitar terá restrições no seu palpite.
+    - A ordem de palpites sempre gira ao fim da rodada
 - O jogo termina quando não há cartas suficientes para iniciar uma nova rodada.
 - Vence o jogador com **maior pontuação final**.
 
