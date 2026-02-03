@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox
+      alignment="CENTER"
+      prefHeight="440.0"
+      prefWidth="540.0"
+      spacing="10.0"
+      style="-fx-background-color: green;"
+      xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.demo.controller.GameController">
+
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <ChoiceBox fx:id="palpiteChoice"
+               layoutX="10"
+               layoutY="10" />
+
+    <Button
+            fx:id="confirmarPalpiteBtn"
+            text="Confirmar Palpite"
+            onAction="#confirmGuess"/>
+
+
+    <HBox spacing="40"
+          alignment="TOP_LEFT"
+          prefWidth="520">
+
+        <GridPane fx:id="placarGrid"
+                  hgap="15"
+                  vgap="2"
+                  alignment="CENTER_LEFT">
+            <Label text="Jogador" textFill="white"/>
+            <Label text="Palpite" textFill="white" GridPane.columnIndex="1"/>
+            <Label text="Mãos vencidas" textFill="white" GridPane.columnIndex="2"/>
+            <Label text="Score" textFill="white" GridPane.columnIndex="3"/>
+        </GridPane>
+
+        <Region HBox.hgrow="ALWAYS"/>
+
+        <VBox alignment="TOP_RIGHT" spacing="5">
+
+            <Button fx:id="toggleForcaCartaBtn"
+                    text="Força das Cartas"
+                    onAction="#toggleForcaCarta"/>
+
+        </VBox>
+
+    </HBox>
+
+
+
+    <Label fx:id="eventoLabel"
+           textFill="yellow"/>
+
+
+    <AnchorPane prefHeight="390.0" prefWidth="520.0">
+
+        <HBox fx:id="maoBotCima"
+              layoutX="120"
+              layoutY="20"
+              prefWidth="300"
+              spacing="-25"
+              alignment="CENTER_LEFT"/>
+
+        <VBox fx:id="maoBotEsquerda"
+              layoutX="20"
+              layoutY="90"
+              prefWidth="60"
+              spacing="-45"
+              alignment="TOP_CENTER"/>
+
+        <VBox fx:id="maoBotDireita"
+              layoutX="460"
+              layoutY="90"
+              prefWidth="60"
+              spacing="-45"
+              alignment="TOP_CENTER"/>
+
+        <!-- ÁREA DO VIRA -->
+        <HBox fx:id="viraBox"
+              layoutX="240"
+              layoutY="110"
+              prefWidth="60"
+              alignment="CENTER"/>
+
+        <!-- MESA CENTRAL -->
+        <HBox fx:id="mesaCentral"
+              layoutX="120"
+              layoutY="150"
+              prefWidth="300"
+              spacing="30"
+              alignment="CENTER"/>
+
+
+        <!-- MÃO DO JOGADOR -->
+        <HBox fx:id="maoJogador"
+              layoutX="120"
+              layoutY="300"
+              prefWidth="300"
+              spacing="-25"
+              alignment="CENTER_LEFT"/>
+
+    </AnchorPane>
+
+</VBox>
