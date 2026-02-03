@@ -35,7 +35,6 @@ O jogo utiliza o sistema de **força das cartas do Truco** (jogo popular em São
 - Controle de turnos
 - Sistema de pontuação
 - Interface gráfica
-- Lógica de jogo desacoplada da UI
 
 ---
 
