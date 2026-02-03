@@ -1,4 +1,5 @@
 # 🃏 Java Card Game
+> Projeto desenvolvido utilizando **Java 17** e **JavaFX**.
 
 Jogo de cartas desenvolvido em **Java**, com interface gráfica e lógica de jogo orientada a objetos.  
 O projeto implementa regras completas de jogo, sistema de palpites, controle de rodadas e suporte a jogadores humanos e bots.
@@ -40,7 +41,7 @@ O jogo utiliza o sistema de **força das cartas do Truco** (jogo popular em São
 
 ## 🛠️ Tecnologias Utilizadas
 
-- Java
+- Java (JDK 17)
 - JavaFX
 - Programação Orientada a Objetos (POO)
 - MVC (separação entre lógica e interface)
